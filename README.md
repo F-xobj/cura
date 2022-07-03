@@ -1,7 +1,10 @@
+Cura Task 
 
 
-In the project directory, you can run:
+### To run the project please write this command in the terminal 
 
-### yarn start 
-to start the project 
+## yarn start
 
+
+
+#### Lots of improvements can be made but due to time constraints it will be delayed
