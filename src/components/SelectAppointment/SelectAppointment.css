@@ -7,17 +7,18 @@ section {
 }
 
 .sectionTitle {
+  font-family: LatoBold;
   font-size: 25px;
   line-height: 30px;
-  font-family: LatoBold;
+  margin-bottom: 21px;
+  text-align: left;
 }
 
 .scheduleBox {
-  height: 372px;
-  width: 357px;
-  border: 1px solid #e1e1e1;
   border-radius: 10px;
+  border: 1px solid #e1e1e1;
   padding: 26px 22px;
+  width: 357px;
 }
 
 .fees {
@@ -25,12 +26,18 @@ section {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 18px;
+  margin-bottom:16px ;
 }
 
 .fees h4,
 .Schedule h4 {
   font-size: 17px;
   font-weight: 800;
+}
+
+.Schedule h4 {
+  margin-bottom: 12px;
 }
 
 .fees p {

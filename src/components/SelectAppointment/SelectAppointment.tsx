@@ -1,7 +1,20 @@
+import { useEffect, useState } from "react";
+import { getClinicData } from "../../api";
+import { Clinic } from "../../types";
 import DateCarousel from "../DateCarousel";
 import "./SelectAppointment.css";
 
 const SelectAppointment = () => {
+  const [clinicData, setClinicData] = useState<Clinic>();
+
+  const fetchClinicData = () => {
+    getClinicData().then((response) => setClinicData(response));
+  };
+
+  useEffect(() => {
+    fetchClinicData();
+  }, []);
+
   return (
     <section>
       <h3 className="sectionTitle">Schedule Appointment</h3>
@@ -13,7 +26,7 @@ const SelectAppointment = () => {
 
         <div className="Schedule">
           <h4>Schedule</h4>
-          <DateCarousel />
+          <DateCarousel clinic={clinicData?.schedule || []} />
         </div>
       </div>
     </section>

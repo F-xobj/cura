@@ -4,7 +4,7 @@ import logo from "../../assets/img/cura.png";
 const Header = () => {
   return (
     <header className="header">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="logo" />
     </header>
   );
 };

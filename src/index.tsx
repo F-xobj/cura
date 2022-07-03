@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/Lato/Lato-Regular.ttf'
 import './assets/fonts/Lato/Lato-Bold.ttf'
+import "slick-carousel/slick/slick.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
