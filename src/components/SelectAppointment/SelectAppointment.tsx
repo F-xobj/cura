@@ -29,6 +29,7 @@ const SelectAppointment = () => {
           <DateCarousel clinic={clinicData?.schedule || []} />
         </div>
       </div>
+      <div className="button">Book Appointment </div>
     </section>
   );
 };
