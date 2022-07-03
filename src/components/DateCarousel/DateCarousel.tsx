@@ -1,12 +1,12 @@
-import moment from "moment";
 import { FC, useEffect, useState } from "react";
 import Slider from "react-slick";
+
+import { DataToRenderProps, DateCarouselProps } from "../../types";
+import { prepareDataToRender } from "../../utils";
 
 import LeftArrow from "../../assets/svg/left.svg";
 import RightArrow from "../../assets/svg/right.svg";
 
-import { DataToRenderProps, DateCarouselProps } from "../../types";
-import { prepareDataToRender } from "../../utils";
 
 import "./DateCarousel.css";
 
@@ -19,6 +19,7 @@ const DateCarousel: FC<DateCarouselProps> = ({ clinic }) => {
     setActive(
       dataToRender.findIndex((item: DataToRenderProps) => !item.isDisable)
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const settings = {
